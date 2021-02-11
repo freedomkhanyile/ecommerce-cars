@@ -18,7 +18,8 @@ namespace ecommerce.Data.Model.Entities
         public string PhoneNumber { get; set; }
         public string Password { get; set; }
         public string UserToken { get; set; }
-
+        public Guid ManufacturerEntityId { get; set; }
+        public virtual ManufacturerEntity Manufacturer { get; set; }
         public virtual IEnumerable<UserRoleEntity> Roles { get; set; }
     }
 }
