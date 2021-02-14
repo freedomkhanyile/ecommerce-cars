@@ -15,5 +15,8 @@ namespace ecommerce.Services.Contracts
         OrderEntity Get(Guid id);
         Task<OrderEntity> Create(CreateOrderModel model);
         Task<OrderEntity> Update(Guid id, UpdateOrderModel model);
+        List<OrderLineEntity> GetOrderLinesByOrderId(Guid id);
+        Task<OrderLineEntity> CreateOrderLine(CreateOrderLineModel model);
+        Task<OrderLineEntity> UpdateOrderLine(int id, UpdateOrderLineModel model);
     }
 }

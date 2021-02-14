@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ecommerce.Services
 {
-    public class VehicleService: IVehicleService
+    public class VehicleService : IVehicleService
     {
         private readonly IUnitOfWork _unitOfWork;
 
@@ -33,7 +33,7 @@ namespace ecommerce.Services
         public VehicleEntity Get(Guid id)
         {
             var vehicle = GetQuery().FirstOrDefault(v => v.Id == id);
-            if(vehicle == null)
+            if (vehicle == null)
                 throw new NotFoundException("Vehicle not found");
             return vehicle;
         }
@@ -60,7 +60,7 @@ namespace ecommerce.Services
         public async Task<VehicleEntity> Update(Guid id, UpdateVehicleModel model)
         {
             var vehicle = Get(id);
-            if(vehicle == null)
+            if (vehicle == null)
                 throw new NotFoundException($"Vehicle not found");
             vehicle.ModelName = model.ModelName;
             vehicle.ModelYear = model.ModelYear;
@@ -72,5 +72,34 @@ namespace ecommerce.Services
             await _unitOfWork.CommitAsync();
             return vehicle;
         }
+        #region vehicle options 
+        public List<VehicleOptionEntity> GetVehicleOptionsByVehicleId(Guid id)
+        {
+            return GetVehicleOptionsQuery().Where(v => v.VehicleEntityId == id).ToList();
+        }
+        private IQueryable<VehicleOptionEntity> GetVehicleOptionsQuery()
+        {
+            return _unitOfWork.Query<VehicleOptionEntity>()
+                .Include(v => v.Vehicle);
+        }
+
+        public async Task<VehicleOptionEntity> CreateVehicleOption(CreateVehicleOptionModel model)
+        {
+            var vehicleOption = new VehicleOptionEntity
+            {
+                VehicleEntityId = model.VehicleEntityId,
+                OptionEntityId = model.OptionEntityId,
+                CreateUserId = model.CreateUserId,
+                CreateDate = DateTime.UtcNow.ToLocalTime(),
+                ModifyUserId = model.ModifyUserId,
+                ModifyDate = DateTime.UtcNow.ToLocalTime(),
+                StatusId = 1
+            };
+
+            _unitOfWork.Add(vehicleOption);
+            await _unitOfWork.CommitAsync();
+            return vehicleOption;
+        }
+        #endregion
     }
 }

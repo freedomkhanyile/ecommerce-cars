@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using ecommerce.Data.Model.BaseEntities;
 
-namespace ecommerce.Data.Model.Entities
+namespace ecormmerce.Web.Models.Orders
 {
-    public class OrderLineEntity: AuditEntity<int>
+    public class OrderLineModel
     {
+        public int Id { get; set; }
         public string ProductId { get; set; }
         public int Quantity { get; set; }
         public double Amount { get; set; }
         public bool IsAssembling { get; set; }
         public Guid OrderEntityId { get; set; }
-        public virtual OrderEntity Order { get; set; }
     }
 }

@@ -32,7 +32,7 @@ namespace ecommerce.Services
         public OrderEntity Get(Guid id)
         {
             var order = GetQuery().FirstOrDefault(o => o.Id == id);
-            if(order == null) 
+            if (order == null)
                 throw new NotFoundException($"Order with id: {id} not found");
             return order;
         }
@@ -56,16 +56,72 @@ namespace ecommerce.Services
             return order;
         }
 
-        public Task<OrderEntity> Update(Guid id, UpdateOrderModel model)
+
+        public async Task<OrderEntity> Update(Guid id, UpdateOrderModel model)
         {
             var order = Get(id);
-            if(order == null)
+            if (order == null)
                 throw new NotFoundException($"Order with id: {id} not found");
             order.Comments = model.Comments;
             order.Amount = model.Amount;
             order.CustomerEntityId = model.CustomerId;
             order.ModifyUserId = model.ModifyUserId;
             order.ModifyDate = DateTime.UtcNow.ToLocalTime();
+            order.StatusId = model.StatusId;
+            await _unitOfWork.CommitAsync();
+            return order;
         }
+
+        #region OrderLine logic
+
+        public List<OrderLineEntity> GetOrderLinesByOrderId(Guid id)
+        {
+            return GetOrderLinesQuery().Where(x => x.OrderEntityId == id).ToList();
+        }
+
+        private IQueryable<OrderLineEntity> GetOrderLinesQuery()
+        {
+            return _unitOfWork.Query<OrderLineEntity>()
+                .Include(o => o.Order);
+        }
+        public async Task<OrderLineEntity> CreateOrderLine(CreateOrderLineModel model)
+        {
+            var orderLine = new OrderLineEntity
+            {
+                ProductId = model.ProductId,
+                Quantity = model.Quantity,
+                Amount = model.Amount,
+                IsAssembling = model.IsAssembling,
+                OrderEntityId = model.OrderEntityId,
+                CreateUserId = model.CreateUserId,
+                CreateDate = DateTime.UtcNow.ToLocalTime(),
+                ModifyUserId = model.ModifyUserId,
+                ModifyDate = DateTime.UtcNow.ToLocalTime(),
+                StatusId = 1
+            };
+
+            _unitOfWork.Add(orderLine);
+            await _unitOfWork.CommitAsync();
+            return orderLine;
+        }
+
+        public async Task<OrderLineEntity> UpdateOrderLine(int id, UpdateOrderLineModel model)
+        {
+            var orderLine = GetOrderLinesQuery().FirstOrDefault(o => o.Id == id);
+            if(orderLine == null)
+                throw new NotFoundException($"Order line with Id : {id} not found");
+            orderLine.ProductId = model.ProductId;
+            orderLine.Quantity = model.Quantity;
+            orderLine.IsAssembling = model.IsAssembling;
+            orderLine.Amount = model.Amount;
+            orderLine.ModifyUserId = model.ModifyUserId;
+            orderLine.ModifyDate = DateTime.UtcNow.ToLocalTime();
+            orderLine.StatusId = model.StatusId;
+            await _unitOfWork.CommitAsync();
+            return orderLine;
+        }
+
+        #endregion
+
     }
 }
