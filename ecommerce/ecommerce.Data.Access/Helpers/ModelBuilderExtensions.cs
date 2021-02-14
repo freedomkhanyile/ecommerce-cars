@@ -257,7 +257,12 @@ namespace ecommerce.Data.Access.Helpers
                     IsLegalEntity = false,
                     Address = "Randpark Ridge, House street",
                     City = "Johannesburg",
-                    AnnualIncome = 900000
+                    AnnualIncome = 900000,
+                    CreateDate = DateTime.Now,
+                    CreateUserId = "System",
+                    ModifyDate = DateTime.Now,
+                    ModifyUserId = "System",
+                    StatusId = 1
                 },
                 new CustomerEntity
                 {
@@ -269,7 +274,12 @@ namespace ecommerce.Data.Access.Helpers
                     IsLegalEntity = true,
                     Address = "Mine park, Mines street",
                     City = "Johannesburg",
-                    AnnualIncome = 90000000
+                    AnnualIncome = 90000000,
+                    CreateDate = DateTime.Now,
+                    CreateUserId = "System",
+                    ModifyDate = DateTime.Now,
+                    ModifyUserId = "System",
+                    StatusId = 1
                 });
         }
         #endregion

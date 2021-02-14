@@ -79,8 +79,7 @@ namespace ecommerce.Services
         }
         private IQueryable<VehicleOptionEntity> GetVehicleOptionsQuery()
         {
-            return _unitOfWork.Query<VehicleOptionEntity>()
-                .Include(v => v.Vehicle);
+            return _unitOfWork.Query<VehicleOptionEntity>();
         }
 
         public async Task<VehicleOptionEntity> CreateVehicleOption(CreateVehicleOptionModel model)

@@ -12,7 +12,7 @@ namespace ecormmerce.Web.Models.Orders
         [Required]
         public double Amount { get; set; }
         public DateTime OrderDate { get; set; }
-        public Guid CustomerId { get; set; }
+        public Guid CustomerEntityId { get; set; }
         public Guid VehicleId { get; set; }
     }
 }

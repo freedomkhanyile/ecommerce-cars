@@ -7,8 +7,7 @@ namespace ecommerce.Data.Model.Entities
     {
         public Guid VehicleEntityId { get; set; }
         public int OptionEntityId { get; set; }
-
-        public VehicleEntity Vehicle { get; set; }
+  
         public OptionEntity Option { get; set; }
         
     }

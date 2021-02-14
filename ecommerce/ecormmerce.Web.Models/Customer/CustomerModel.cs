@@ -6,7 +6,7 @@ namespace ecormmerce.Web.Models.Customer
 {
     public class CustomerModel
     {
-        public Guid Id { get; set; }
+        public Guid CustomerEntityId { get; set; }
         public string FirstName { get; set; }
         public string Surname { get; set; }
         public string FullName => FirstName + " " + Surname;
