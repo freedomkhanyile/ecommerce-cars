@@ -1,0 +1,12 @@
+E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Security\bin\Debug\netcoreapp3.1\ecommerce.Security.deps.json
+E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Security\bin\Debug\netcoreapp3.1\ecommerce.Security.dll
+E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Security\bin\Debug\netcoreapp3.1\ecommerce.Security.pdb
+E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Security\obj\Debug\netcoreapp3.1\ecommerce.Security.csprojAssemblyReference.cache
+E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Security\obj\Debug\netcoreapp3.1\ecommerce.Security.AssemblyInfoInputs.cache
+E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Security\obj\Debug\netcoreapp3.1\ecommerce.Security.AssemblyInfo.cs
+E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Security\obj\Debug\netcoreapp3.1\ecommerce.Security.csproj.CoreCompileInputs.cache
+E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Security\obj\Debug\netcoreapp3.1\ecommerce.Security.dll
+E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Security\obj\Debug\netcoreapp3.1\ecommerce.Security.pdb
+E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Security\bin\Debug\netcoreapp3.1\ecommerce.Data.Model.dll
+E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Security\bin\Debug\netcoreapp3.1\ecommerce.Data.Model.pdb
+E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Security\obj\Debug\netcoreapp3.1\ecommerce.Security.csproj.CopyComplete

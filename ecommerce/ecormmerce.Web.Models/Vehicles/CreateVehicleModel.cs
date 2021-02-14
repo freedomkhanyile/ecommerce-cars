@@ -14,5 +14,7 @@ namespace ecormmerce.Web.Models.Vehicles
         [Required]
         public string BodyStyle { get; set; }
         public Guid ManufacturerEntityId { get; set; }
+        public string CreateUserId { get; set; }
+        public string ModifyUserId { get; set; }
     }
 }

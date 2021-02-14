@@ -5,7 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ecommerce.Common\ecommerce.Common.csproj" />
+    <ProjectReference Include="..\ecommerce.Data.Access\ecommerce.Data.Access.csproj" />
     <ProjectReference Include="..\ecommerce.Data.Model\ecommerce.Data.Model.csproj" />
+    <ProjectReference Include="..\ecommerce.Security\ecommerce.Security.csproj" />
     <ProjectReference Include="..\ecormmerce.Web.Models\ecormmerce.Web.Models.csproj" />
   </ItemGroup>
 

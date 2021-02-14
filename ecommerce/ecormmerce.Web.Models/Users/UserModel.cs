@@ -10,6 +10,7 @@ namespace ecormmerce.Web.Models.Users
         {
             Roles = new string[0];
         }
+        public Guid Id { get; set; }
         public string FirstName { get; set; }
         public string Surname { get; set; }
         public string Email { get; set; }

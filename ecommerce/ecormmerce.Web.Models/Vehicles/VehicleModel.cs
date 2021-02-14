@@ -12,6 +12,7 @@ namespace ecormmerce.Web.Models.Vehicles
         [Required]
         public string ModelYear { get; set; }
         [Required]
+
         public string BodyStyle { get; set; }
         public Guid ManufacturerEntityId { get; set; }
     }

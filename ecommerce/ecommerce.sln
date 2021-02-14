@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecommerce.Common", "ecommer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ecormmerce.Web.Models", "ecormmerce.Web.Models\ecormmerce.Web.Models.csproj", "{2918CA6F-9F02-4E26-AFD8-073BB9E85E9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ecommerce.Security", "ecommerce.Security\ecommerce.Security.csproj", "{8ABDC253-A487-45CE-9D33-A574B20A43FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{2918CA6F-9F02-4E26-AFD8-073BB9E85E9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2918CA6F-9F02-4E26-AFD8-073BB9E85E9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2918CA6F-9F02-4E26-AFD8-073BB9E85E9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ABDC253-A487-45CE-9D33-A574B20A43FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ABDC253-A487-45CE-9D33-A574B20A43FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ABDC253-A487-45CE-9D33-A574B20A43FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ABDC253-A487-45CE-9D33-A574B20A43FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{CC3A522C-446E-4414-9D8D-FDC1C59E3AB6} = {5BD75596-901F-42FB-9DDF-5E5652D8F456}
 		{5865F143-3A9D-49A7-861C-43D76D4E5CF7} = {5BD75596-901F-42FB-9DDF-5E5652D8F456}
 		{2918CA6F-9F02-4E26-AFD8-073BB9E85E9E} = {5BD75596-901F-42FB-9DDF-5E5652D8F456}
+		{8ABDC253-A487-45CE-9D33-A574B20A43FD} = {5BD75596-901F-42FB-9DDF-5E5652D8F456}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A09297D9-BE59-4F9B-A79C-FD8900B36B54}

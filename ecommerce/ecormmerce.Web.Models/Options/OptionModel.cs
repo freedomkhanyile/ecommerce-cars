@@ -7,6 +7,7 @@ namespace ecormmerce.Web.Models.Options
 {
     public class OptionModel
     {
+        public int Id { get; set; }
         [Required]
         public string Code { get; set; }
         [Required]

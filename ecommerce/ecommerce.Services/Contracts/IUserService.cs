@@ -16,6 +16,5 @@ namespace ecommerce.Services.Contracts
         UserEntity GetByToken(string token);
         Task<UserEntity> Create(CreateUserModel model);
         Task<UserEntity> Update(Guid id, UpdateUserModel model);
-        Task Delete(Guid id);
     }
 }

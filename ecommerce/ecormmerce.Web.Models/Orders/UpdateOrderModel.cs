@@ -7,12 +7,14 @@ namespace ecormmerce.Web.Models.Orders
 {
     public class UpdateOrderModel
     {
-        public Guid Id { get; set; }
+ 
         public string Comments { get; set; }
         [Required]
         public double Amount { get; set; }
         public DateTime OrderDate { get; set; }
         public Guid CustomerId { get; set; }
         public Guid VehicleId { get; set; }
+        public string ModifyUserId { get; set; }
+        public int StatusId { get; set; }
     }
 }

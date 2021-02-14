@@ -22,5 +22,8 @@ namespace ecormmerce.Web.Models.Accounts
         public string Address { get; set; }
         public string City { get; set; }
         public string[] Roles { get; set; }
+        public string ManufaturerId { get; set; }
+        public string CreateUserId { get; set; }
+        public string ModifyUserId { get; set; }
     }
 }

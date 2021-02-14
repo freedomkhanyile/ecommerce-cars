@@ -20,6 +20,6 @@ namespace ecommerce.Data.Model.Entities
         public string UserToken { get; set; }
         public Guid ManufacturerEntityId { get; set; }
         public virtual ManufacturerEntity Manufacturer { get; set; }
-        public virtual IEnumerable<UserRoleEntity> Roles { get; set; }
+        public virtual IList<UserRoleEntity> Roles { get; set; }
     }
 }

@@ -203,6 +203,7 @@ namespace ecommerce.Data.Access.Helpers
             builder.Entity<VehicleEntity>().HasData(
                 new VehicleEntity
                 {
+                    Id= Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc4237251555"),
                     ModelName = "VW Golf GTI 7",
                     BodyStyle = "Hot Hatchback",
                     ModelYear = "2021",
@@ -215,6 +216,7 @@ namespace ecommerce.Data.Access.Helpers
                 },
                 new VehicleEntity
                 {
+                    Id = Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc4237251566"),
                     ModelName = "BMW M3",
                     BodyStyle = "Sedan",
                     ModelYear = "2021",
@@ -227,6 +229,7 @@ namespace ecommerce.Data.Access.Helpers
                 },
                 new VehicleEntity
                 {
+                    Id = Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc4213251566"),
                     ModelName = "Mercedes Benz C63 AMG",
                     BodyStyle = "Coupe",
                     ModelYear = "2021",
@@ -246,6 +249,7 @@ namespace ecommerce.Data.Access.Helpers
 
                 new CustomerEntity
                 {
+                    Id = Guid.Parse("ff5641f7-ce8d-4de5-aef7-bc4213251566"),
                     FirstName = "Freedom",
                     Surname = "Khanyile",
                     Email = "freedom.khanyile@mail.com",
@@ -257,6 +261,7 @@ namespace ecommerce.Data.Access.Helpers
                 },
                 new CustomerEntity
                 {
+                    Id = Guid.Parse("ff5641f7-ce8d-4de5-aef7-bc4213251586"),
                     FirstName = "Goldman Mines",
                     Surname = null,
                     Email = "info@goldman-mines.com",

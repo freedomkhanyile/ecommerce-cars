@@ -69,6 +69,37 @@ namespace ecommerce.Data.Access.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Customers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("ff5641f7-ce8d-4de5-aef7-bc4213251566"),
+                            Address = "Randpark Ridge, House street",
+                            AnnualIncome = 900000.0,
+                            City = "Johannesburg",
+                            CreateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "freedom.khanyile@mail.com",
+                            FirstName = "Freedom",
+                            IsLegalEntity = false,
+                            ModifyDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            PhoneNumber = "07455658457",
+                            StatusId = 0,
+                            Surname = "Khanyile"
+                        },
+                        new
+                        {
+                            Id = new Guid("ff5641f7-ce8d-4de5-aef7-bc4213251586"),
+                            Address = "Mine park, Mines street",
+                            AnnualIncome = 90000000.0,
+                            City = "Johannesburg",
+                            CreateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "info@goldman-mines.com",
+                            FirstName = "Goldman Mines",
+                            IsLegalEntity = true,
+                            ModifyDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            PhoneNumber = "0112457854",
+                            StatusId = 0
+                        });
                 });
 
             modelBuilder.Entity("ecommerce.Data.Model.Entities.ManufacturerEntity", b =>
@@ -118,10 +149,10 @@ namespace ecommerce.Data.Access.Migrations
                         {
                             Id = new Guid("c6e641f7-ce8d-4de5-aef7-bc4237251445"),
                             Address = "New Land, Car Street 900",
-                            CreateDate = new DateTime(2021, 2, 14, 7, 37, 6, 119, DateTimeKind.Local).AddTicks(2611),
+                            CreateDate = new DateTime(2021, 2, 14, 16, 28, 31, 66, DateTimeKind.Local).AddTicks(3059),
                             CreateUserId = "System",
                             ManufacturerName = "Volivo Motors",
-                            ModifyDate = new DateTime(2021, 2, 14, 7, 37, 6, 119, DateTimeKind.Local).AddTicks(2620),
+                            ModifyDate = new DateTime(2021, 2, 14, 16, 28, 31, 66, DateTimeKind.Local).AddTicks(3069),
                             ModifyUserId = "System",
                             StatusId = 1,
                             StockInHand = 99,
@@ -132,10 +163,10 @@ namespace ecommerce.Data.Access.Migrations
                         {
                             Id = new Guid("c6e641f7-ce8d-4de5-aef7-bc4237251235"),
                             Address = "New Land, Factory street",
-                            CreateDate = new DateTime(2021, 2, 14, 7, 37, 6, 119, DateTimeKind.Local).AddTicks(2711),
+                            CreateDate = new DateTime(2021, 2, 14, 16, 28, 31, 66, DateTimeKind.Local).AddTicks(3184),
                             CreateUserId = "System",
                             ManufacturerName = "Volivo Factory 1",
-                            ModifyDate = new DateTime(2021, 2, 14, 7, 37, 6, 119, DateTimeKind.Local).AddTicks(2714),
+                            ModifyDate = new DateTime(2021, 2, 14, 16, 28, 31, 66, DateTimeKind.Local).AddTicks(3186),
                             ModifyUserId = "System",
                             StatusId = 1,
                             StockInHand = 99,
@@ -146,10 +177,10 @@ namespace ecommerce.Data.Access.Migrations
                         {
                             Id = new Guid("c6e641f7-ce8d-4de5-aef7-bc4237261335"),
                             Address = "New Land, Factory street 2",
-                            CreateDate = new DateTime(2021, 2, 14, 7, 37, 6, 119, DateTimeKind.Local).AddTicks(2721),
+                            CreateDate = new DateTime(2021, 2, 14, 16, 28, 31, 66, DateTimeKind.Local).AddTicks(3192),
                             CreateUserId = "System",
                             ManufacturerName = "Volivo Factory 2",
-                            ModifyDate = new DateTime(2021, 2, 14, 7, 37, 6, 119, DateTimeKind.Local).AddTicks(2724),
+                            ModifyDate = new DateTime(2021, 2, 14, 16, 28, 31, 66, DateTimeKind.Local).AddTicks(3193),
                             ModifyUserId = "System",
                             StatusId = 1,
                             StockInHand = 99,
@@ -160,10 +191,10 @@ namespace ecommerce.Data.Access.Migrations
                         {
                             Id = new Guid("c6e641f7-ce8d-4de5-aef7-bc3237251336"),
                             Address = "New Land, Warehouse Street 900",
-                            CreateDate = new DateTime(2021, 2, 14, 7, 37, 6, 119, DateTimeKind.Local).AddTicks(2728),
+                            CreateDate = new DateTime(2021, 2, 14, 16, 28, 31, 66, DateTimeKind.Local).AddTicks(3197),
                             CreateUserId = "System",
                             ManufacturerName = "Volivo Warehouse",
-                            ModifyDate = new DateTime(2021, 2, 14, 7, 37, 6, 119, DateTimeKind.Local).AddTicks(2729),
+                            ModifyDate = new DateTime(2021, 2, 14, 16, 28, 31, 66, DateTimeKind.Local).AddTicks(3198),
                             ModifyUserId = "System",
                             StatusId = 1,
                             StockInHand = 99,
@@ -225,10 +256,10 @@ namespace ecommerce.Data.Access.Migrations
                         {
                             Id = 1,
                             Code = "ENG-COMP",
-                            CreateDate = new DateTime(2021, 2, 14, 7, 37, 6, 120, DateTimeKind.Local).AddTicks(969),
+                            CreateDate = new DateTime(2021, 2, 14, 16, 28, 31, 67, DateTimeKind.Local).AddTicks(1225),
                             CreateUserId = "System",
                             ManufacturerEntityId = new Guid("c6e641f7-ce8d-4de5-aef7-bc4237251235"),
-                            ModifyDate = new DateTime(2021, 2, 14, 7, 37, 6, 120, DateTimeKind.Local).AddTicks(979),
+                            ModifyDate = new DateTime(2021, 2, 14, 16, 28, 31, 67, DateTimeKind.Local).AddTicks(1236),
                             ModifyUserId = "System",
                             Name = "Engine",
                             Price = 9000.0,
@@ -240,10 +271,10 @@ namespace ecommerce.Data.Access.Migrations
                         {
                             Id = 2,
                             Code = "CHA-COMP",
-                            CreateDate = new DateTime(2021, 2, 14, 7, 37, 6, 120, DateTimeKind.Local).AddTicks(1050),
+                            CreateDate = new DateTime(2021, 2, 14, 16, 28, 31, 67, DateTimeKind.Local).AddTicks(1306),
                             CreateUserId = "System",
                             ManufacturerEntityId = new Guid("c6e641f7-ce8d-4de5-aef7-bc4237261335"),
-                            ModifyDate = new DateTime(2021, 2, 14, 7, 37, 6, 120, DateTimeKind.Local).AddTicks(1052),
+                            ModifyDate = new DateTime(2021, 2, 14, 16, 28, 31, 67, DateTimeKind.Local).AddTicks(1307),
                             ModifyUserId = "System",
                             Name = "Chasis",
                             Price = 10000.0,
@@ -255,10 +286,10 @@ namespace ecommerce.Data.Access.Migrations
                         {
                             Id = 3,
                             Code = "OPT-COMP",
-                            CreateDate = new DateTime(2021, 2, 14, 7, 37, 6, 120, DateTimeKind.Local).AddTicks(1057),
+                            CreateDate = new DateTime(2021, 2, 14, 16, 28, 31, 67, DateTimeKind.Local).AddTicks(1311),
                             CreateUserId = "System",
                             ManufacturerEntityId = new Guid("c6e641f7-ce8d-4de5-aef7-bc4237261335"),
-                            ModifyDate = new DateTime(2021, 2, 14, 7, 37, 6, 120, DateTimeKind.Local).AddTicks(1057),
+                            ModifyDate = new DateTime(2021, 2, 14, 16, 28, 31, 67, DateTimeKind.Local).AddTicks(1313),
                             ModifyUserId = "System",
                             Name = "Option Pack",
                             Price = 5000.0,
@@ -388,9 +419,9 @@ namespace ecommerce.Data.Access.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2021, 2, 14, 7, 37, 5, 916, DateTimeKind.Local).AddTicks(3608),
+                            CreateDate = new DateTime(2021, 2, 14, 16, 28, 30, 888, DateTimeKind.Local).AddTicks(5326),
                             CreateUserId = "System",
-                            ModifyDate = new DateTime(2021, 2, 14, 7, 37, 5, 918, DateTimeKind.Local).AddTicks(5391),
+                            ModifyDate = new DateTime(2021, 2, 14, 16, 28, 30, 890, DateTimeKind.Local).AddTicks(4470),
                             ModifyUserId = "System",
                             RoleName = "Admin",
                             StatusId = 1
@@ -398,9 +429,9 @@ namespace ecommerce.Data.Access.Migrations
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2021, 2, 14, 7, 37, 5, 918, DateTimeKind.Local).AddTicks(7132),
+                            CreateDate = new DateTime(2021, 2, 14, 16, 28, 30, 890, DateTimeKind.Local).AddTicks(6328),
                             CreateUserId = "System",
-                            ModifyDate = new DateTime(2021, 2, 14, 7, 37, 5, 918, DateTimeKind.Local).AddTicks(7156),
+                            ModifyDate = new DateTime(2021, 2, 14, 16, 28, 30, 890, DateTimeKind.Local).AddTicks(6351),
                             ModifyUserId = "System",
                             RoleName = "Manufacturer",
                             StatusId = 1
@@ -408,9 +439,9 @@ namespace ecommerce.Data.Access.Migrations
                         new
                         {
                             Id = 3,
-                            CreateDate = new DateTime(2021, 2, 14, 7, 37, 5, 918, DateTimeKind.Local).AddTicks(7186),
+                            CreateDate = new DateTime(2021, 2, 14, 16, 28, 30, 890, DateTimeKind.Local).AddTicks(6385),
                             CreateUserId = "System",
-                            ModifyDate = new DateTime(2021, 2, 14, 7, 37, 5, 918, DateTimeKind.Local).AddTicks(7187),
+                            ModifyDate = new DateTime(2021, 2, 14, 16, 28, 30, 890, DateTimeKind.Local).AddTicks(6387),
                             ModifyUserId = "System",
                             RoleName = "Customer",
                             StatusId = 1
@@ -506,14 +537,14 @@ namespace ecommerce.Data.Access.Migrations
                         new
                         {
                             Id = new Guid("c6e641f7-ce8d-4de5-aef7-bc4237251335"),
-                            CreateDate = new DateTime(2021, 2, 14, 7, 37, 6, 117, DateTimeKind.Local).AddTicks(6682),
+                            CreateDate = new DateTime(2021, 2, 14, 16, 28, 31, 64, DateTimeKind.Local).AddTicks(7702),
                             CreateUserId = "System",
                             Email = "admin@mail.com",
                             FirstName = "john",
                             ManufacturerEntityId = new Guid("c6e641f7-ce8d-4de5-aef7-bc4237251445"),
-                            ModifyDate = new DateTime(2021, 2, 14, 7, 37, 6, 117, DateTimeKind.Local).AddTicks(8212),
+                            ModifyDate = new DateTime(2021, 2, 14, 16, 28, 31, 64, DateTimeKind.Local).AddTicks(9194),
                             ModifyUserId = "System",
-                            Password = "$2a$11$Fe2XetkMatAKpTyEopEEQOfCpwsRIDBG2RSjGZSgItrJNsJPBfNnS",
+                            Password = "$2a$11$zT0N8cYrZnX65rUdkNN.jOpy2sZ4kZ7WfX6bGBiBjwvmy18asWp3u",
                             StatusId = 1,
                             Surname = "Doe"
                         });
@@ -561,9 +592,9 @@ namespace ecommerce.Data.Access.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2021, 2, 14, 7, 37, 6, 118, DateTimeKind.Local).AddTicks(4685),
+                            CreateDate = new DateTime(2021, 2, 14, 16, 28, 31, 65, DateTimeKind.Local).AddTicks(5263),
                             CreateUserId = "System",
-                            ModifyDate = new DateTime(2021, 2, 14, 7, 37, 6, 118, DateTimeKind.Local).AddTicks(4696),
+                            ModifyDate = new DateTime(2021, 2, 14, 16, 28, 31, 65, DateTimeKind.Local).AddTicks(5274),
                             ModifyUserId = "System",
                             RoleEntityId = 1,
                             StatusId = 1,
@@ -611,6 +642,47 @@ namespace ecommerce.Data.Access.Migrations
                     b.HasIndex("ManufacturerEntityId");
 
                     b.ToTable("Vehicles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("c6e641f7-ce8d-4de5-aef7-bc4237251555"),
+                            BodyStyle = "Hot Hatchback",
+                            CreateDate = new DateTime(2021, 2, 14, 16, 28, 31, 67, DateTimeKind.Local).AddTicks(8006),
+                            CreateUserId = "System",
+                            ManufacturerEntityId = new Guid("c6e641f7-ce8d-4de5-aef7-bc4237251445"),
+                            ModelName = "VW Golf GTI 7",
+                            ModelYear = "2021",
+                            ModifyDate = new DateTime(2021, 2, 14, 16, 28, 31, 67, DateTimeKind.Local).AddTicks(8017),
+                            ModifyUserId = "System",
+                            StatusId = 1
+                        },
+                        new
+                        {
+                            Id = new Guid("c6e641f7-ce8d-4de5-aef7-bc4237251566"),
+                            BodyStyle = "Sedan",
+                            CreateDate = new DateTime(2021, 2, 14, 16, 28, 31, 67, DateTimeKind.Local).AddTicks(8081),
+                            CreateUserId = "System",
+                            ManufacturerEntityId = new Guid("c6e641f7-ce8d-4de5-aef7-bc4237251445"),
+                            ModelName = "BMW M3",
+                            ModelYear = "2021",
+                            ModifyDate = new DateTime(2021, 2, 14, 16, 28, 31, 67, DateTimeKind.Local).AddTicks(8083),
+                            ModifyUserId = "System",
+                            StatusId = 1
+                        },
+                        new
+                        {
+                            Id = new Guid("c6e641f7-ce8d-4de5-aef7-bc4213251566"),
+                            BodyStyle = "Coupe",
+                            CreateDate = new DateTime(2021, 2, 14, 16, 28, 31, 67, DateTimeKind.Local).AddTicks(8088),
+                            CreateUserId = "System",
+                            ManufacturerEntityId = new Guid("c6e641f7-ce8d-4de5-aef7-bc4237251445"),
+                            ModelName = "Mercedes Benz C63 AMG",
+                            ModelYear = "2021",
+                            ModifyDate = new DateTime(2021, 2, 14, 16, 28, 31, 67, DateTimeKind.Local).AddTicks(8089),
+                            ModifyUserId = "System",
+                            StatusId = 1
+                        });
                 });
 
             modelBuilder.Entity("ecommerce.Data.Model.Entities.VehicleOptionEntity", b =>

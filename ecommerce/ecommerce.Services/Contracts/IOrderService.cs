@@ -13,7 +13,7 @@ namespace ecommerce.Services.Contracts
     {
         IQueryable<OrderEntity> Get();
         OrderEntity Get(Guid id);
-        Task<OrderEntity> Create(CreateUserModel model);
+        Task<OrderEntity> Create(CreateOrderModel model);
         Task<OrderEntity> Update(Guid id, UpdateOrderModel model);
     }
 }

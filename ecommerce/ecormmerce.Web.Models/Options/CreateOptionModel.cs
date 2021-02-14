@@ -18,5 +18,7 @@ namespace ecormmerce.Web.Models.Options
         [Required]
         public int QtyStock { get; set; }
         public Guid ManufacturerEntityId { get; set; }
+        public string CreateUserId { get; set; }
+        public string ModifyUserId { get; set; }
     }
 }
