@@ -11,6 +11,8 @@
     <Compile Remove="Migrations\20210213034352_seed-user-roles.Designer.cs" />
     <Compile Remove="Migrations\20210213034838_seed-user-roles.cs" />
     <Compile Remove="Migrations\20210213034838_seed-user-roles.Designer.cs" />
+    <Compile Remove="Migrations\20210214052903_seed_options_vehicles_customer_data.cs" />
+    <Compile Remove="Migrations\20210214052903_seed_options_vehicles_customer_data.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

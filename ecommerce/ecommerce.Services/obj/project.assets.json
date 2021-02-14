@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "ecommerce.Data.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/ecommerce.Data.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ecommerce.Data.Model.dll": {}
+        }
+      },
+      "ecormmerce.Web.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/ecormmerce.Web.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ecormmerce.Web.Models.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ecommerce.Data.Model/1.0.0": {
+      "type": "project",
+      "path": "../ecommerce.Data.Model/ecommerce.Data.Model.csproj",
+      "msbuildProject": "../ecommerce.Data.Model/ecommerce.Data.Model.csproj"
+    },
+    "ecormmerce.Web.Models/1.0.0": {
+      "type": "project",
+      "path": "../ecormmerce.Web.Models/ecormmerce.Web.Models.csproj",
+      "msbuildProject": "../ecormmerce.Web.Models/ecormmerce.Web.Models.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "ecommerce.Data.Model >= 1.0.0",
+      "ecormmerce.Web.Models >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\freedom.khanyile\\.nuget\\packages\\": {},
@@ -41,7 +76,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\ndu-systems\\source\\ecommerce-cars\\ecommerce\\ecommerce.Data.Model\\ecommerce.Data.Model.csproj": {
+              "projectPath": "E:\\ndu-systems\\source\\ecommerce-cars\\ecommerce\\ecommerce.Data.Model\\ecommerce.Data.Model.csproj"
+            },
+            "E:\\ndu-systems\\source\\ecommerce-cars\\ecommerce\\ecormmerce.Web.Models\\ecormmerce.Web.Models.csproj": {
+              "projectPath": "E:\\ndu-systems\\source\\ecommerce-cars\\ecommerce\\ecormmerce.Web.Models\\ecormmerce.Web.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

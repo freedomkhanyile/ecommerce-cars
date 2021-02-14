@@ -8,6 +8,8 @@ namespace ecommerce.Data.Model.Entities
         public string Code { get; set; }
         public string Name { get; set; }
         public string Value { get; set; }
+        public double Price { get; set; }
+        public int QtyStock { get; set; }
         public Guid ManufacturerEntityId { get; set; }
         public virtual ManufacturerEntity Manufacturer { get; set; }
     }

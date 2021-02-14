@@ -7,14 +7,38 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "ecommerce.Services/1.0.0": {
+        "dependencies": {
+          "ecommerce.Data.Model": "1.0.0",
+          "ecormmerce.Web.Models": "1.0.0"
+        },
         "runtime": {
           "ecommerce.Services.dll": {}
+        }
+      },
+      "ecommerce.Data.Model/1.0.0": {
+        "runtime": {
+          "ecommerce.Data.Model.dll": {}
+        }
+      },
+      "ecormmerce.Web.Models/1.0.0": {
+        "runtime": {
+          "ecormmerce.Web.Models.dll": {}
         }
       }
     }
   },
   "libraries": {
     "ecommerce.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ecommerce.Data.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ecormmerce.Web.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

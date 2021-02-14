@@ -60,10 +60,10 @@ namespace ecommerce.Data.Access.Helpers
                     ModifyDate = DateTime.Now,
                     ModifyUserId = "System",
                     StatusId = 1
-                }, 
+                },
                 new ManufacturerEntity
                 {
-                    Id = Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc4237251115"),
+                    Id = Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc4237251235"),
                     ManufacturerName = "Volivo Factory 1",
                     Telephone = "01245487541",
                     Address = "New Land, Factory street",
@@ -74,10 +74,10 @@ namespace ecommerce.Data.Access.Helpers
                     ModifyDate = DateTime.Now,
                     ModifyUserId = "System",
                     StatusId = 1
-                },      
+                },
                 new ManufacturerEntity
                 {
-                    Id = Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc4237251995"),
+                    Id = Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc4237261335"),
                     ManufacturerName = "Volivo Factory 2",
                     Telephone = "01401245122",
                     Address = "New Land, Factory street 2",
@@ -88,10 +88,10 @@ namespace ecommerce.Data.Access.Helpers
                     ModifyDate = DateTime.Now,
                     ModifyUserId = "System",
                     StatusId = 1
-                },  
+                },
                 new ManufacturerEntity
                 {
-                    Id = Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc423725177"),
+                    Id = Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc3237251336"),
                     ManufacturerName = "Volivo Warehouse",
                     Telephone = "01401245122",
                     Address = "New Land, Warehouse Street 900",
@@ -155,33 +155,39 @@ namespace ecommerce.Data.Access.Helpers
                     Name = "Engine",
                     Code = "ENG-COMP",
                     Value = "V12 Engine",
-                    ManufacturerEntityId = Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc4237251115"),
+                    Price = 9000.00,
+                    QtyStock = 10,
+                    ManufacturerEntityId = Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc4237251235"),
                     CreateDate = DateTime.Now,
                     CreateUserId = "System",
                     ModifyDate = DateTime.Now,
                     ModifyUserId = "System",
                     StatusId = 1
-                },  
+                },
                 new OptionEntity
                 {
                     Id = 2,
                     Name = "Chasis",
                     Code = "CHA-COMP",
-                    ManufacturerEntityId = Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc4237251115"),
                     Value = "Ladder Frame",
+                    Price = 10000.00,
+                    QtyStock = 10,
+                    ManufacturerEntityId = Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc4237261335"),
                     CreateDate = DateTime.Now,
                     CreateUserId = "System",
                     ModifyDate = DateTime.Now,
                     ModifyUserId = "System",
                     StatusId = 1
-                }, 
+                },
                 new OptionEntity
                 {
                     Id = 3,
                     Name = "Option Pack",
                     Code = "OPT-COMP",
                     Value = "Performance Package",
-                    ManufacturerEntityId = Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc4237251115"),
+                    Price = 5000.00,
+                    QtyStock = 10,
+                    ManufacturerEntityId = Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc4237261335"),
                     CreateDate = DateTime.Now,
                     CreateUserId = "System",
                     ModifyDate = DateTime.Now,
@@ -191,8 +197,76 @@ namespace ecommerce.Data.Access.Helpers
             );
 
         }
-        
 
+        public static void SeedVehicleData(this ModelBuilder builder)
+        {
+            builder.Entity<VehicleEntity>().HasData(
+                new VehicleEntity
+                {
+                    ModelName = "VW Golf GTI 7",
+                    BodyStyle = "Hot Hatchback",
+                    ModelYear = "2021",
+                    ManufacturerEntityId = Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc4237251445"),
+                    CreateDate = DateTime.Now,
+                    CreateUserId = "System",
+                    ModifyDate = DateTime.Now,
+                    ModifyUserId = "System",
+                    StatusId = 1
+                },
+                new VehicleEntity
+                {
+                    ModelName = "BMW M3",
+                    BodyStyle = "Sedan",
+                    ModelYear = "2021",
+                    ManufacturerEntityId = Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc4237251445"),
+                    CreateDate = DateTime.Now,
+                    CreateUserId = "System",
+                    ModifyDate = DateTime.Now,
+                    ModifyUserId = "System",
+                    StatusId = 1
+                },
+                new VehicleEntity
+                {
+                    ModelName = "Mercedes Benz C63 AMG",
+                    BodyStyle = "Coupe",
+                    ModelYear = "2021",
+                    ManufacturerEntityId = Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc4237251445"),
+                    CreateDate = DateTime.Now,
+                    CreateUserId = "System",
+                    ModifyDate = DateTime.Now,
+                    ModifyUserId = "System",
+                    StatusId = 1
+                }
+            );
+        }
+
+        public static void SeedCustomerData(this ModelBuilder builder)
+        {
+            builder.Entity<CustomerEntity>().HasData(
+
+                new CustomerEntity
+                {
+                    FirstName = "Freedom",
+                    Surname = "Khanyile",
+                    Email = "freedom.khanyile@mail.com",
+                    PhoneNumber = "07455658457",
+                    IsLegalEntity = false,
+                    Address = "Randpark Ridge, House street",
+                    City = "Johannesburg",
+                    AnnualIncome = 900000
+                },
+                new CustomerEntity
+                {
+                    FirstName = "Goldman Mines",
+                    Surname = null,
+                    Email = "info@goldman-mines.com",
+                    PhoneNumber = "0112457854",
+                    IsLegalEntity = true,
+                    Address = "Mine park, Mines street",
+                    City = "Johannesburg",
+                    AnnualIncome = 90000000
+                });
+        }
         #endregion
     }
 }

@@ -12,7 +12,5 @@ namespace ecommerce.Data.Model.Entities
         public DateTime OrderDate { get; set; }
         public Guid CustomerEntityId { get; set; }
         public virtual CustomerEntity Customer { get; set; }
-        public Guid VehicleEntityId { get; set; }
-        public virtual VehicleEntity Vehicle { get; set; }
     }
 }
