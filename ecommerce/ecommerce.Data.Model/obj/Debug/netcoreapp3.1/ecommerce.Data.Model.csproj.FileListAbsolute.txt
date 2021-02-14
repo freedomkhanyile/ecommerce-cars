@@ -6,4 +6,3 @@ E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Data.Model\obj\Debug\ne
 E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Data.Model\obj\Debug\netcoreapp3.1\ecommerce.Data.Model.csproj.CoreCompileInputs.cache
 E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Data.Model\obj\Debug\netcoreapp3.1\ecommerce.Data.Model.dll
 E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Data.Model\obj\Debug\netcoreapp3.1\ecommerce.Data.Model.pdb
-E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Data.Model\obj\Debug\netcoreapp3.1\ecommerce.Data.Model.csprojAssemblyReference.cache

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using ecommerce.Data.Access.Helpers;
 using Microsoft.EntityFrameworkCore;
 
 namespace ecommerce.Data.Access.DAL
@@ -19,6 +20,14 @@ namespace ecommerce.Data.Access.DAL
             {
                 mapping.Visit(modelBuilder);
             }
+
+            modelBuilder.SeedRoleData();
+            modelBuilder.SeedUserData();
+            modelBuilder.SeedUserRoleData();
+
+            modelBuilder.SeedManufacturerData();
+            modelBuilder.SeedOptionData();
+
         }
     }
 }

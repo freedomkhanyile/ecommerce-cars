@@ -109,6 +109,21 @@ namespace ecommerce.Data.Access.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Manufacturers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("c6e641f7-ce8d-4de5-aef7-bc4237251445"),
+                            Address = "New Land, Car Street 900",
+                            CreateDate = new DateTime(2021, 2, 13, 6, 3, 31, 376, DateTimeKind.Local).AddTicks(8915),
+                            CreateUserId = "System",
+                            ManufacturerName = "Volivo Motors",
+                            ModifyDate = new DateTime(2021, 2, 13, 6, 3, 31, 377, DateTimeKind.Local).AddTicks(61),
+                            ModifyUserId = "System",
+                            StatusId = 1,
+                            StockInHand = 99,
+                            Telephone = "01401245122"
+                        });
                 });
 
             modelBuilder.Entity("ecommerce.Data.Model.Entities.OptionEntity", b =>
@@ -184,6 +199,38 @@ namespace ecommerce.Data.Access.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreateDate = new DateTime(2021, 2, 13, 6, 3, 31, 372, DateTimeKind.Local).AddTicks(4352),
+                            CreateUserId = "System",
+                            ModifyDate = new DateTime(2021, 2, 13, 6, 3, 31, 374, DateTimeKind.Local).AddTicks(2329),
+                            ModifyUserId = "System",
+                            RoleName = "Admin",
+                            StatusId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreateDate = new DateTime(2021, 2, 13, 6, 3, 31, 374, DateTimeKind.Local).AddTicks(4123),
+                            CreateUserId = "System",
+                            ModifyDate = new DateTime(2021, 2, 13, 6, 3, 31, 374, DateTimeKind.Local).AddTicks(4194),
+                            ModifyUserId = "System",
+                            RoleName = "Manufacturer",
+                            StatusId = 1
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreateDate = new DateTime(2021, 2, 13, 6, 3, 31, 374, DateTimeKind.Local).AddTicks(4223),
+                            CreateUserId = "System",
+                            ModifyDate = new DateTime(2021, 2, 13, 6, 3, 31, 374, DateTimeKind.Local).AddTicks(4224),
+                            ModifyUserId = "System",
+                            RoleName = "Customer",
+                            StatusId = 1
+                        });
                 });
 
             modelBuilder.Entity("ecommerce.Data.Model.Entities.StatusEntity", b =>
@@ -270,6 +317,22 @@ namespace ecommerce.Data.Access.Migrations
                     b.HasIndex("ManufacturerEntityId");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("c6e641f7-ce8d-4de5-aef7-bc4237251335"),
+                            CreateDate = new DateTime(2021, 2, 13, 6, 3, 31, 537, DateTimeKind.Local).AddTicks(3873),
+                            CreateUserId = "System",
+                            Email = "admin@mail.com",
+                            FirstName = "john",
+                            ManufacturerEntityId = new Guid("c6e641f7-ce8d-4de5-aef7-bc4237251445"),
+                            ModifyDate = new DateTime(2021, 2, 13, 6, 3, 31, 537, DateTimeKind.Local).AddTicks(3963),
+                            ModifyUserId = "System",
+                            Password = "$2a$11$fE773XZlpjqf1kD4ImgM.OG/QPqNC7c98ecyR3UENkdyqaW5BYphm",
+                            StatusId = 1,
+                            Surname = "Doe"
+                        });
                 });
 
             modelBuilder.Entity("ecommerce.Data.Model.Entities.UserRoleEntity", b =>
@@ -309,6 +372,19 @@ namespace ecommerce.Data.Access.Migrations
                     b.HasIndex("UserEntityId");
 
                     b.ToTable("UserRoles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreateDate = new DateTime(2021, 2, 13, 6, 3, 31, 537, DateTimeKind.Local).AddTicks(9390),
+                            CreateUserId = "System",
+                            ModifyDate = new DateTime(2021, 2, 13, 6, 3, 31, 537, DateTimeKind.Local).AddTicks(9442),
+                            ModifyUserId = "System",
+                            RoleEntityId = 1,
+                            StatusId = 1,
+                            UserEntityId = new Guid("c6e641f7-ce8d-4de5-aef7-bc4237251335")
+                        });
                 });
 
             modelBuilder.Entity("ecommerce.Data.Model.Entities.VehicleEntity", b =>

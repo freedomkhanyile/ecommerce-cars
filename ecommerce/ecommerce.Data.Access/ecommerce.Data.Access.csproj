@@ -7,6 +7,10 @@
   <ItemGroup>
     <Compile Remove="Migrations\20210212104319_initial.cs" />
     <Compile Remove="Migrations\20210212104319_initial.Designer.cs" />
+    <Compile Remove="Migrations\20210213034352_seed-user-roles.cs" />
+    <Compile Remove="Migrations\20210213034352_seed-user-roles.Designer.cs" />
+    <Compile Remove="Migrations\20210213034838_seed-user-roles.cs" />
+    <Compile Remove="Migrations\20210213034838_seed-user-roles.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,9 +22,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ecommerce.Data.Model\ecommerce.Data.Model.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Migrations\" />
   </ItemGroup>
  
 

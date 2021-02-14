@@ -11,5 +11,6 @@ namespace ecommerce.Data.Model.Entities
         public string Address { get; set; }
         public string Telephone { get; set; }
         public int StockInHand { get; set; }
+        public string Type { get; set; }
     }
 }

@@ -1,9 +1,9 @@
 E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Common\bin\Debug\netcoreapp3.1\ecommerce.Common.deps.json
 E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Common\bin\Debug\netcoreapp3.1\ecommerce.Common.dll
 E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Common\bin\Debug\netcoreapp3.1\ecommerce.Common.pdb
+E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Common\obj\Debug\netcoreapp3.1\ecommerce.Common.csprojAssemblyReference.cache
 E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Common\obj\Debug\netcoreapp3.1\ecommerce.Common.AssemblyInfoInputs.cache
 E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Common\obj\Debug\netcoreapp3.1\ecommerce.Common.AssemblyInfo.cs
 E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Common\obj\Debug\netcoreapp3.1\ecommerce.Common.csproj.CoreCompileInputs.cache
 E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Common\obj\Debug\netcoreapp3.1\ecommerce.Common.dll
 E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Common\obj\Debug\netcoreapp3.1\ecommerce.Common.pdb
-E:\ndu-systems\source\ecommerce-cars\ecommerce\ecommerce.Common\obj\Debug\netcoreapp3.1\ecommerce.Common.csprojAssemblyReference.cache
