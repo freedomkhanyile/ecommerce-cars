@@ -27,10 +27,11 @@ namespace ecommerce.Data.Access.DAL
 
             modelBuilder.SeedManufacturerData();
             modelBuilder.SeedOptionData();
-
-
             modelBuilder.SeedVehicleData();
+            modelBuilder.SeedVehicleOptionsData();
+
             modelBuilder.SeedCustomerData();
+      
 
         }
     }

@@ -15,5 +15,6 @@ namespace ecormmerce.Web.Models.Orders
         public Guid VehicleId { get; set; }
         public string CreateUserId { get; set; }
         public string ModifyUserId { get; set; }
+        public string[] SelectedOptions { get; set; }
     }
 }

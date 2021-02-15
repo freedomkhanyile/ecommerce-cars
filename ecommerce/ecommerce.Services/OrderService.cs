@@ -13,12 +13,20 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ecommerce.Services
 {
+    /// <summary>
+    /// TODO: Implement create order business logic
+    /// </summary>
     public class OrderService : IOrderService
     {
         private readonly IUnitOfWork _unitOfWork;
-        public OrderService(IUnitOfWork unitOfWork)
+        private readonly IVehicleService _vehicleService;
+        private readonly IOptionService _optionService;
+
+        public OrderService(IUnitOfWork unitOfWork, IVehicleService vehicleService, IOptionService optionService)
         {
             _unitOfWork = unitOfWork;
+            _vehicleService = vehicleService;
+            _optionService = optionService;
         }
         public IQueryable<OrderEntity> Get()
         {
@@ -36,7 +44,7 @@ namespace ecommerce.Services
                 throw new NotFoundException($"Order with id: {id} not found");
             return order;
         }
-
+ 
         public async Task<OrderEntity> Create(CreateOrderModel model)
         {
             var order = new OrderEntity

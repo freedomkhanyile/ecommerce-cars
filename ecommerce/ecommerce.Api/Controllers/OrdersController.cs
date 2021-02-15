@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace ecommerce.Api.Controllers
 {
+    /// <summary>
+    /// TODO: Implement order methods
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class OrdersController : ControllerBase

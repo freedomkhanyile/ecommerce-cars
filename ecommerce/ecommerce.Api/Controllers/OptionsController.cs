@@ -10,6 +10,9 @@ using ecommerce.Services.Contracts;
 
 namespace ecommerce.Api.Controllers
 {
+    /// <summary>
+    /// TODO: Implement option methods
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class OptionsController : ControllerBase

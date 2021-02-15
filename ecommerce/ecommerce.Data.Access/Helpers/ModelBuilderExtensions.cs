@@ -243,6 +243,35 @@ namespace ecommerce.Data.Access.Helpers
             );
         }
 
+        public static void SeedVehicleOptionsData(this ModelBuilder builder)
+        {
+            builder.Entity<VehicleOptionEntity>().HasData(
+
+                new VehicleOptionEntity
+                {
+                    Id = 1,
+                    OptionEntityId = 1,
+                    VehicleEntityId = Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc4237251555"),
+                    CreateDate = DateTime.Now,
+                    CreateUserId = "System",
+                    ModifyDate = DateTime.Now,
+                    ModifyUserId = "System",
+                    StatusId = 1
+                }, 
+                new VehicleOptionEntity
+                {
+                    Id = 3,
+                    OptionEntityId = 3,
+                    VehicleEntityId = Guid.Parse("c6e641f7-ce8d-4de5-aef7-bc4237251555"),
+                    CreateDate = DateTime.Now,
+                    CreateUserId = "System",
+                    ModifyDate = DateTime.Now,
+                    ModifyUserId = "System",
+                    StatusId = 1
+                }
+            );
+        }
+
         public static void SeedCustomerData(this ModelBuilder builder)
         {
             builder.Entity<CustomerEntity>().HasData(
