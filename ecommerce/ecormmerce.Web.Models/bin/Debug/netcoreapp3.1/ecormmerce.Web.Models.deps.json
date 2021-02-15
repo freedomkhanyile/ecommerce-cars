@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ecormmerce.Web.Models/1.0.0": {
+        "runtime": {
+          "ecormmerce.Web.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ecormmerce.Web.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

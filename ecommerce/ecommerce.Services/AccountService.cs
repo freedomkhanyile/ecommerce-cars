@@ -86,7 +86,7 @@ namespace ecommerce.Services
                 Surname = model.Surname,
                 PhoneNumber = model.PhoneNumber,
                 Email = model.Email,
-                Password = model.Password,
+                Password = model.Password.WithBCrypt(),
                 Roles = model.Roles,
                 ManufaturerId = model.ManufaturerId,
                 CreateUserId = model.CreateUserId,

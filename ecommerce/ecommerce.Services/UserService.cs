@@ -59,6 +59,7 @@ namespace ecommerce.Services
         {
             if (GetQuery().Any(u => u.Email == model.Email.Trim()))
                 throw new BadRequestException("This email address is already in use.");
+
             var user = new UserEntity
             {
                 Id = Guid.NewGuid(),
@@ -67,6 +68,7 @@ namespace ecommerce.Services
                 Email = model.Email.Trim(),
                 PhoneNumber = model.PhoneNumber,
                 Password = model.Password,
+                ManufacturerEntityId = Guid.Parse(model.ManufaturerId),
                 CreateUserId = model.CreateUserId,
                 CreateDate = DateTime.UtcNow.ToLocalTime(),
                 ModifyUserId = model.ModifyUserId,
